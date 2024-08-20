@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration and Deletion App</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>User Registration and Deletion</h2>
+        <form id="addUserForm">
+            <div class="form-group">
+                <label for="userName">Name:</label>
+                <input type="text" class="form-control" id="userName" required>
+            </div>
+            <div class="form-group">
+                <label for="userEmail">Email:</label>
+                <input type="email" class="form-control" id="userEmail" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+
+        <h3 class="mt-5">Registered Users</h3>
+        <div class="table-responsive">
+            <table class="table table-hover table-striped" id="usersTable">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
