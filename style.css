@@ -1,3 +1,19 @@
-.container { max-width: 800px; }
-.form-row { margin-bottom: 1rem; }
-.form-group { margin-bottom: 0; }
+.container { 
+    max-width: 800px; 
+}
+
+.form-row { 
+    margin-bottom: 1rem; 
+}
+
+.form-group { 
+    margin-bottom: 0; 
+
+}
+.table {
+    width: 100%;
+}
+
+.table th, .table td {
+    text-align: center;
+}
